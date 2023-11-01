@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 4</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<h1>Hello {{name}} !!</h1>
+<h2>I am %{{gender_prob}} sure that you are {{gender}}! </h2>
+<h3>And you are {{age}} years old! </h3>
+{%for item in nat_list%}
+<h4>I am %{{item["probability"]*100}} sure that you are from {{item["country_id"]}}</h4>
+{%endfor%}
+
+</body>
+<footer>
+    <p>we are on {{year}}</p>
+</footer>
+</html>
